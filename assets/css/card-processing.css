@@ -1,0 +1,19 @@
+.card-processing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 368px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  transition: .5s;
+  overflow: hidden;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}

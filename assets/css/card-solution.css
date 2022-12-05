@@ -1,0 +1,86 @@
+.card-solution {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 368px;
+  height: 100%;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  transition: .5s;
+}
+
+.card-solution::before,
+.card-solution::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--rounded);
+  background-image: var(--gradient-blue);
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+  opacity: .5;
+  transition: .5s all;
+}
+
+.card-solution::before {
+  top: 0px;
+  left: 0px;
+}
+
+.card-solution::after {
+  bottom: 0px;
+  right: 0px;
+}
+
+.card-solution:hover {
+  box-shadow: none;
+
+}
+
+.card-solution:hover::before {
+  width: 50%;
+  height: 50%;
+  top: -7px;
+  left: -7px;
+}
+
+.card-solution:hover::after {
+  width: 50%;
+  height: 50%;
+  bottom: -7px;
+  right: -7px;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.see-more {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.see-more span {
+  margin-right: 2px;
+  transition: .3s all;
+}
+
+.see-more:hover span {
+  margin-right: 6px;
+}
+
+@media (min-width: 768px) {
+  .card-solution {
+    min-height: 50vh;
+  }
+}

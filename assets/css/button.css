@@ -1,0 +1,20 @@
+.btn-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-main::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -10%;
+    left: -180%;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-main:hover::before {
+    left: 60%;
+}

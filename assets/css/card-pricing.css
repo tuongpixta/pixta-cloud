@@ -1,0 +1,54 @@
+.card-pricing {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  max-width: 360px;
+  min-width: 270px;
+  width: 100%;
+  height: 100%;
+  padding: 24px 12px;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  z-index: 2;
+  transition: .5s;
+}
+
+.card-pricing::before,
+.card-pricing::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: var(--rounded);
+  background-image: var(--gradient-blue);
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+  opacity: .5;
+  transition: .5s all;
+}
+
+.card-pricing::before {
+  top: -7px;
+  left: -7px;
+}
+
+.card-pricing::after {
+  bottom: -7px;
+  right: -7px;
+}
+
+.card-pricing:hover {
+  box-shadow: none;
+  transform: scale(1.01);
+}
+
+.card-pricing:hover::before {
+  width: calc(100% + 14px);
+  height: calc(100% + 14px);
+}
+
+.card-pricing:hover::after {
+  width: calc(100% + 14px);
+  height: calc(100% + 14px);
+}
