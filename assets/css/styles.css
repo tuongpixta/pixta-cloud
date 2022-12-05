@@ -20,33 +20,6 @@
   justify-content: center;
 }
 
-.three-dimension-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100%; */
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.bg {
-  transform: translateZ(-10px) scale(2);
-}
-
-.fg {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.bg,
-.fg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .text-shadow-spotlight {
   text-shadow: -0.0075em 0.0075em 0 #fff5f2, 0.005em 0.005em 0 #ffbca7, 0.01em 0.01em 0 #ffbfab, 0.015em 0.015em #ffc3af, 0.02em 0.02em 0 #ffc6b4, 0.025em 0.025em 0 #ffc9b8, 0.03em 0.03em 0 #ffcdbd, 0.035em 0.035em 0 #ffd0c1;
 }
