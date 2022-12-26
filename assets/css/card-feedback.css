@@ -1,0 +1,41 @@
+.card-feedback {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  min-width: 360px;
+  height: 100%;
+  padding: 24px 12px;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  transition: all .5s;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .hover-fade-up {
+    margin-top: 60px;
+    transition: all ease-in-out .5s;
+  }
+
+  .card-feedback:hover .hover-fade-up {
+    margin-top: 0px;
+  }
+
+  .hover-show {
+    position: absolute;
+    bottom: -196px;
+    width: 100%;
+    left: 0px;
+    transition: all ease-in-out .5s;
+  }
+
+  .card-feedback:hover .hover-show {
+    bottom: 20px;
+
+  }
+}
+
+.feedback-text {
+  height: 216px;
+}

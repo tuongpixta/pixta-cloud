@@ -36,12 +36,20 @@ ul {
   z-index: 2;
 }
 
+.w-100-vw {
+  width: 100vw;
+}
+
 .max-w-360 {
   max-width: 360px;
 }
 
 .max-w-1200 {
   max-width: 1200px;
+}
+
+.max-w-1248 {
+  max-width: 1248px;
 }
 
 .w-20 {
@@ -97,6 +105,10 @@ ul {
 
 .fs-16 {
   font-size: 16px;
+}
+
+.fs-24 {
+  font-size: 24px;
 }
 
 .fs-large {
@@ -158,8 +170,20 @@ ul {
   object-fit: cover;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
 .w-max-content {
   width: max-content;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
