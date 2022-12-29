@@ -37,6 +37,12 @@
   background-size: cover;
 }
 
+.bg-contact {
+  background: linear-gradient(#0000,
+      #0003), url(/assets/images/bg/bg-contact.jpeg) no-repeat center;
+  background-size: cover;
+}
+
 .section-title {
   font-size: 28px;
 }
@@ -57,7 +63,7 @@
   opacity: .5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   [snap-wrapper] {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;

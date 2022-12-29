@@ -1,0 +1,60 @@
+.contact-form {
+  display: grid;
+  grid-template-areas: "name" "company" "email" "message" "btn";
+  gap: 16px;
+  max-width: 768px;
+  width: 100%;
+}
+
+.name {
+  grid-area: name;
+}
+
+.company {
+  grid-area: company;
+}
+
+.email {
+  grid-area: email;
+}
+
+.message {
+  grid-area: message;
+}
+
+.btn {
+  grid-area: btn;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-wrapper :is(input, textarea) {
+  width: 100%;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  height: 100%;
+  outline: none;
+  background-color: #fffe;
+}
+
+.input-wrapper :is(input, textarea):is(:valid) {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.input-wrapper :is(input, textarea):is(:hover, :focus) {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    grid-template-areas:
+      "name company message message"
+      "email email message message"
+      "btn btn btn btn";
+  }
+}
