@@ -12,14 +12,22 @@ function postToGoogle() {
       'entry.1380366076': emailVal,
       'entry.849207910': messageVal,
     },
-    type: 'POST',
-    dataType: 'xml',
+    type: 'GET',
+    dataType: 'jsonp',
+    crossDomain: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+    jsonpCallback: 'handleResponse',
     success: function (d) {
       alert('success!', d);
     },
-    error: function (x, y, z) {
-      console.log(x, y, z);
+    error: function (error) {
+      console.log(error);
     },
   });
   return false;
+}
+function handleResponse(response) {
+  console.log(response);
 }
